@@ -1,0 +1,10 @@
+<h2>Account</h2>
+<div>
+  <label for="new-hero">Username: </label>
+  <input name="new-helper" #helperName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button type="button" class="add-button" (click)="login(helperName.value); helperName.value=''">
+    Enter
+  </button>
+</div>

@@ -1,0 +1,29 @@
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label for="hero-name">Name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Name"/>
+  </div>
+  <div>
+    <label for="quantity">Quantity: </label>
+    <input id="quantity" [(ngModel)]="hero.quantity" placeholder="Quantity"/>
+  </div>
+  <div>
+    <label for="animal">Animal: </label>
+    <input id="animal" [(ngModel)]="hero.animal" placeholder="Animal"/>
+  </div>
+  <div>
+    <label for="cost">Cost: </label>
+    <input id="cost" [(ngModel)]="hero.cost" placeholder="Cost"/>
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="save()">save</button>
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
