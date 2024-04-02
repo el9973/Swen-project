@@ -36,5 +36,3 @@ build/
 
 ### Angular Cache ###
 .angular
-/.angular/cache
-.angular/cache
